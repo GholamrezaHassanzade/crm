@@ -13,6 +13,7 @@ export const BaseStylesConfigReset = css`
         font-size: 10px;
     }
     body {
+        text-align: right;
         direction: rtl;
     }
     html,

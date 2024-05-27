@@ -12,9 +12,12 @@ const createColor = (mainColor: string) => augmentColor({ color: { main: mainCol
 
 
 export const MATERIAL_UI_THEME_LIGHT_CONFIG: Theme = createTheme({
-    direction: 'ltr',
+    direction: 'rtl',
     typography: {
         fontFamily: 'Roboto',
+        allVariants:{
+            textAlign: "right"
+        },
         button: {
             fontSize: '1rem',
         }

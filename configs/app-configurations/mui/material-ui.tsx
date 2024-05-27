@@ -9,10 +9,15 @@ import { IMaterialUIProvider } from "@/configs/app-configurations/mui/material-u
 //* import theme
 import { MATERIAL_UI_THEME_LIGHT_CONFIG } from "@/configs/app-configurations/mui/material-ui.config.theme";
 
+// * import config RTL MUI
+import { MaterialUIConfigRTL } from "@/configs/app-configurations/mui/material-ui.config.rtl";
+
 export const MaterialUIConfig: FC<IMaterialUIProvider> = ({ children }) => {
     return (
-        <MUIThemeProvider theme={MATERIAL_UI_THEME_LIGHT_CONFIG}>
-            {children}
-        </MUIThemeProvider>
+        <MaterialUIConfigRTL>
+            <MUIThemeProvider theme={MATERIAL_UI_THEME_LIGHT_CONFIG}>
+                {children}
+            </MUIThemeProvider>
+        </MaterialUIConfigRTL>
     );
 };
