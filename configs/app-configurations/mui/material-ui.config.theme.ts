@@ -23,8 +23,13 @@ export const MATERIAL_UI_THEME_LIGHT_CONFIG: Theme = createTheme({
         }
 
     },
+    palette: {
+        primary: {
+            main: createColor(THEME_LIGHT.PRIMARY).main,
+            contrastText: createColor(THEME_LIGHT.WHITE).main
+        }
+    },
     components: {
-        // Name of the component
         MuiButton: {
             styleOverrides: {
                 root: {
@@ -37,17 +42,18 @@ export const MATERIAL_UI_THEME_LIGHT_CONFIG: Theme = createTheme({
                 root: {
                     fontFamily: "Roboto",
                     width: "100%",
+                    padding : "0",
                     '& .MuiOutlinedInput-root': {
                         borderRadius: '6px',
                         height: '45px', // Adjust height here
                         '& fieldset': {
-                            borderColor: '#ccc', // Default border color
+                            borderColor: createColor(THEME_LIGHT.PRIMARY).main, // Default border color
                         },
                         '&:hover fieldset': {
-                            borderColor: '#000', // Border color on hover
+                            borderColor: createColor(THEME_LIGHT.SECONDARY).main, // Border color on hover
                         },
                         '&.Mui-focused fieldset': {
-                            borderColor: '#3f51b5', // Border color when focused
+                            borderColor: createColor(THEME_LIGHT.SECONDARY).main, // Border color when focused
                         },
                     },
                 }
@@ -68,6 +74,7 @@ export const MATERIAL_UI_THEME_LIGHT_CONFIG: Theme = createTheme({
                     body2: 'span',
                 },
             },
-        }
+        },
+
     }
 })

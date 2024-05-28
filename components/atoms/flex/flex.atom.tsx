@@ -1,4 +1,4 @@
-"use client"
+"use client";
 // * import tools
 import React, { FC } from "react";
 import styled from "@emotion/styled";
@@ -15,6 +15,8 @@ const Flex = styled.div<IFlex>`
     gap: ${({ gap }) => gap || "0"};
     width: ${({ width }) => width || "unset"};
     height: ${({ height }) => height || "unset"};
+    padding: ${({ padding }) => padding || "0"};
+    background-color: ${({ bgColor }) => bgColor || "0"};
 `;
 export const FlexAtom: FC<IFlex> = ({ children, ...rest }) => {
     return <Flex {...rest}>{children}</Flex>;

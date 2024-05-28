@@ -1,11 +1,19 @@
 "use client";
 
 import { Flex, Form, Input, Typography } from "@/components/atoms";
-import { Grid } from "@mui/material";
+import { useTheme } from "@emotion/react";
+import { Button, Grid } from "@mui/material";
 
 export default function LoginPage() {
+    const { PRIMARY } = useTheme();
     return (
-        <Flex align="center" justify="center" width="100%" height="100%">
+        <Flex
+            align="center"
+            justify="center"
+            width="100%"
+            height="100%"
+            bgColor={PRIMARY}
+        >
             <Form width="600px">
                 <Grid container spacing={4}>
                     <Grid item md={12} xs={12}>
@@ -17,7 +25,9 @@ export default function LoginPage() {
                         <Input placeholder="password" variant="outlined" />
                     </Grid>
                     <Grid item md={12} xs={12}>
-                        1
+                        <Button variant="contained" fullWidth>
+                            submit
+                        </Button>
                     </Grid>
                 </Grid>
             </Form>

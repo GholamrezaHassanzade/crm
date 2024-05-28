@@ -19,7 +19,7 @@ const COLORS: Theme = {
     // other theme properties...
     WHITE: '#ffffff',
     BLACK: '#000000',
-    PRIMARY: '#00AEFF',
+    PRIMARY: '#1c8df8',
     SECONDARY: '#00C8FD',
     WARNING: '#FF775C',
     ERROR: '#820014',

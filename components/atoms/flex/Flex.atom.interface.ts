@@ -9,4 +9,6 @@ export interface IFlex {
     children?: ReactNode;
     width?: string;
     height?: string;
+    padding?: string;
+    bgColor?: string;
 }

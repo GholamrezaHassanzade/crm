@@ -5,9 +5,6 @@ import { TextField, TextFieldProps } from "@mui/material";
 
 const Input = styled((props: TextFieldProps) => <TextField {...props} />)`
     width: 100%;
-    height: 35px;
-    border-radius: 3px;
-    padding-right: 6px;
 `;
 
 export const InputAtom = forwardRef<HTMLInputElement, IInputAtom>(
