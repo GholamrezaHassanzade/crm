@@ -7,4 +7,6 @@ export interface IFlex {
     wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
     gap?: string;
     children?: ReactNode;
+    width?: string;
+    height?: string;
 }
