@@ -2,7 +2,7 @@
 
 import { Flex, Form, Input, Typography, Button } from "@/components/atoms";
 import { useTheme } from "@emotion/react";
-import { Grid } from "@mui/material";
+import { Grid, FormLabel } from "@mui/material";
 
 export default function LoginPage() {
     const { PRIMARY } = useTheme();
@@ -15,17 +15,34 @@ export default function LoginPage() {
             bgColor={PRIMARY}
         >
             <Form width="600px">
-                <Grid container spacing={4}>
+                <Grid container spacing={3}>
                     <Grid item md={12} xs={12}>
-                        <Typography variant="body1"> نام کاربری </Typography>
-                        <Input placeholder="نام کاربری " variant="outlined" />
+                        <FormLabel component="label" htmlFor="username">
+                            {" "}
+                            نام کاربری
+                        </FormLabel>
+                        <Input
+                            placeholder="نام کاربری "
+                            variant="outlined"
+                            id="username"
+                        />
                     </Grid>
                     <Grid item md={12} xs={12}>
-                        <Typography variant="h1"> رمز عبور</Typography>
-                        <Input placeholder="رمز عبور" variant="outlined" />
+                        <FormLabel component="label" htmlFor="password">
+                            {" "}
+                            رمز عبور
+                        </FormLabel>
+                        <Input
+                            placeholder="رمز عبور"
+                            variant="outlined"
+                            id="password"
+                        />
                     </Grid>
                     <Grid item md={12} xs={12}>
-                        sdg
+                        <Typography>
+                            فراموشی
+                            <Button variant="text">رمز عبور</Button>{" "}
+                        </Typography>
                     </Grid>
                     <Grid item md={12} xs={12}>
                         <Button variant="contained" fullWidth>
