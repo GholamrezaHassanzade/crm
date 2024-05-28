@@ -1,4 +1,4 @@
-"use client"
+"use client";
 // * Import tools
 import { FC } from "react";
 // * Import interfase
@@ -9,7 +9,7 @@ import { EmotionConfig } from "@/configs/app-configurations/emotion/emotion.conf
 import { BaseStylesConfig } from "@/configs/app-configurations/base_styles/base_styles.config";
 import { MaterialUIConfig } from "@/configs/app-configurations/mui/material-ui";
 
-export const AppConfigurations: FC<IAppConfigurations> = ({ children }) => {    
+export const AppConfigurations: FC<IAppConfigurations> = ({ children }) => {
     return (
         <MaterialUIConfig>
             <BaseStylesConfig />

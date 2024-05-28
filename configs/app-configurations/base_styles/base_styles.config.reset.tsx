@@ -13,8 +13,8 @@ export const BaseStylesConfigReset = css`
         font-size: 10px;
     }
     body {
-        text-align: right;
-        direction: rtl;
+        text-align: left !important;
+        direction: ltr !important;
     }
     html,
     body,
