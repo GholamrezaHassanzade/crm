@@ -1,8 +1,8 @@
 "use client";
 
-import { Flex, Form, Input, Typography } from "@/components/atoms";
+import { Flex, Form, Input, Typography, Button } from "@/components/atoms";
 import { useTheme } from "@emotion/react";
-import { Button, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 
 export default function LoginPage() {
     const { PRIMARY } = useTheme();
@@ -17,16 +17,19 @@ export default function LoginPage() {
             <Form width="600px">
                 <Grid container spacing={4}>
                     <Grid item md={12} xs={12}>
-                        <Typography variant="h1">user name</Typography>
-                        <Input placeholder="user name" variant="outlined" />
+                        <Typography variant="body1"> نام کاربری </Typography>
+                        <Input placeholder="نام کاربری " variant="outlined" />
                     </Grid>
                     <Grid item md={12} xs={12}>
-                        <Typography variant="h1">password</Typography>
-                        <Input placeholder="password" variant="outlined" />
+                        <Typography variant="h1"> رمز عبور</Typography>
+                        <Input placeholder="رمز عبور" variant="outlined" />
+                    </Grid>
+                    <Grid item md={12} xs={12}>
+                        sdg
                     </Grid>
                     <Grid item md={12} xs={12}>
                         <Button variant="contained" fullWidth>
-                            submit
+                            ورود
                         </Button>
                     </Grid>
                 </Grid>

@@ -14,7 +14,7 @@ const createColor = (mainColor: string) => augmentColor({ color: { main: mainCol
 export const MATERIAL_UI_THEME_LIGHT_CONFIG: Theme = createTheme({
     direction: 'rtl',
     typography: {
-        fontFamily: 'Roboto',
+        fontFamily: 'IRANSans',
         allVariants: {
             textAlign: "right"
         },

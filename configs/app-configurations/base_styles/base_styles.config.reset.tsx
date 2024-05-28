@@ -15,6 +15,7 @@ export const BaseStylesConfigReset = css`
     body {
         text-align: left !important;
         direction: ltr !important;
+        font-family: 'IRANSans';
     }
     html,
     body,
