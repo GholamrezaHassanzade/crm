@@ -34,11 +34,22 @@ export const MATERIAL_UI_THEME_LIGHT_CONFIG: Theme = createTheme({
         },
         MuiTextField: {
             styleOverrides: {
-
                 root: {
-
                     fontFamily: "Roboto",
                     width: "100%",
+                    '& .MuiOutlinedInput-root': {
+                        borderRadius: '6px',
+                        height: '45px', // Adjust height here
+                        '& fieldset': {
+                            borderColor: '#ccc', // Default border color
+                        },
+                        '&:hover fieldset': {
+                            borderColor: '#000', // Border color on hover
+                        },
+                        '&.Mui-focused fieldset': {
+                            borderColor: '#3f51b5', // Border color when focused
+                        },
+                    },
                 }
             }
         },
