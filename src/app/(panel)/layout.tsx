@@ -1,6 +1,6 @@
 "use client";
 import { Flex } from "@/components/atoms";
-import { Sidebar } from "@/components/molecules";
+import { Header, Sidebar } from "@/components/molecules";
 
 export default function HomeLayout({
     children,
@@ -13,9 +13,8 @@ export default function HomeLayout({
                 <Sidebar />
             </Flex>
             <Flex width="85%" direction="column">
-                <header>
-                    <nav>Header</nav>
-                </header>
+                <Header />
+                
                 <main>{children}</main>
             </Flex>
         </Flex>
