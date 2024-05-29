@@ -16,7 +16,7 @@ const Flex = styled.div<IFlex>`
     width: ${({ width }) => width || "unset"};
     height: ${({ height }) => height || "unset"};
     padding: ${({ padding }) => padding || "0"};
-    background-color: ${({ bgColor }) => bgColor || "0"};
+    background-color: ${({ bgColor }) => bgColor || "unset"};
 `;
 export const FlexAtom: FC<IFlex> = ({ children, ...rest }) => {
     return <Flex {...rest}>{children}</Flex>;
