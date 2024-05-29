@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Image, Typography } from "@/components/atoms";
+import { Flex, Image, Typography, Link } from "@/components/atoms";
 import { useTheme } from "@emotion/react";
 import { IMAGES } from "@/constants/contents";
 
@@ -24,51 +24,57 @@ export const SidebarMolecules = () => {
             </Flex>
 
             <Flex height="90%" direction="column">
-                <Flex
-                    direction="row"
-                    align="center"
-                    bgColor="#1c5cf885"
-                    width="100%"
-                    justify="space-between"
-                    padding="12px 0"
-                >
-                    <Flex align="center" gap="8px" padding="0px 0 0  16px">
-                        <Image src={IMAGES.PLUS} alt="plus" width={25} />
-                        <Typography color={WHITE} fontSize={10}>
-                            ایجاد سرنخ{" "}
-                        </Typography>
+                <Link href="/bugs/add">
+                    <Flex
+                        direction="row"
+                        align="center"
+                        bgColor="#1c5cf885"
+                        width="100%"
+                        justify="space-between"
+                        padding="12px 0"
+                    >
+                        <Flex align="center" gap="8px" padding="0px 0 0  16px">
+                            <Image src={IMAGES.PLUS} alt="plus" width={25} />
+                            <Typography color={WHITE} fontSize={10}>
+                                ایجاد سرنخ{" "}
+                            </Typography>
+                        </Flex>
                     </Flex>
-                </Flex>
-                <Flex
-                    direction="row"
-                    align="center"
-                    //bgColor="#1c5cf885"
-                    width="100%"
-                    justify="space-between"
-                    padding="12px 0"
-                >
-                    <Flex align="center" gap="8px" padding="0px 0 0  16px">
-                        <Image src={IMAGES.PLUS} alt="plus" width={25} />
-                        <Typography color={WHITE} fontSize={10}>
-                            مشاهده سرنخ ها{" "}
-                        </Typography>
+                </Link>
+                <Link href="/bugs">
+                    <Flex
+                        direction="row"
+                        align="center"
+                        //bgColor="#1c5cf885"
+                        width="100%"
+                        justify="space-between"
+                        padding="12px 0"
+                    >
+                        <Flex align="center" gap="8px" padding="0px 0 0  16px">
+                            <Image src={IMAGES.PLUS} alt="plus" width={25} />
+                            <Typography color={WHITE} fontSize={10}>
+                                مشاهده سرنخ ها{" "}
+                            </Typography>
+                        </Flex>
                     </Flex>
-                </Flex>
-                <Flex
-                    direction="row"
-                    align="center"
-                    //bgColor="#1c5cf885"
-                    width="100%"
-                    justify="space-between"
-                    padding="12px 0"
-                >
-                    <Flex align="center" gap="8px" padding="0px 0 0  16px">
-                        <Image src={IMAGES.PLUS} alt="plus" width={25} />
-                        <Typography color={WHITE} fontSize={10}>
-                            درون ریزی سرخ{" "}
-                        </Typography>
+                </Link>
+                <Link href="/bugs/import">
+                    <Flex
+                        direction="row"
+                        align="center"
+                        //bgColor="#1c5cf885"
+                        width="100%"
+                        justify="space-between"
+                        padding="12px 0"
+                    >
+                        <Flex align="center" gap="8px" padding="0px 0 0  16px">
+                            <Image src={IMAGES.PLUS} alt="plus" width={25} />
+                            <Typography color={WHITE} fontSize={10}>
+                                درون ریزی سرخ{" "}
+                            </Typography>
+                        </Flex>
                     </Flex>
-                </Flex>
+                </Link>
             </Flex>
         </Flex>
     );
