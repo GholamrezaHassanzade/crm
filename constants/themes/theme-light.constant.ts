@@ -11,6 +11,7 @@ declare module '@emotion/react' {
         ERROR: string;
         INFO: string;
         SUCCESS: string;
+        bgColor: string;
     }
 }
 
@@ -25,6 +26,7 @@ const COLORS: Theme = {
     ERROR: '#820014',
     INFO: '#F9F871',
     SUCCESS: '#26EDB7',
+    bgColor: '#F5F5F5',
 };
 
 
