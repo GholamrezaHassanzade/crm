@@ -1,9 +1,11 @@
 "use client";
 
+// * import tools
+import { useEffect, useState } from "react";
 import {  Form, Input, Typography, Button } from "@/components/atoms";
 import { useTheme } from "@emotion/react";
 import { Grid, FormLabel } from "@mui/material";
-import { useEffect, useState } from "react";
+
 import LoadingPage from "./loading";
 
 export default function LoginPage() {

@@ -1,5 +1,5 @@
 "use client";
-import { Flex, Form, Input, Typography, Button } from "@/components/atoms";
+import { Flex } from "@/components/atoms";
 import { useTheme } from "@emotion/react";
 
 export default function AuthLayout({

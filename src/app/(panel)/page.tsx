@@ -15,5 +15,5 @@ export default function AdminPage() {
         // Fetch or set your protected data here
         console.log("This is protected admin data.");
     }, [router]);
-    return <div>HomePage</div>;
+    return <div>Chart</div>;
 }
