@@ -7,14 +7,8 @@ export const SidebarMolecules = () => {
     const { PRIMARY, WHITE } = useTheme();
 
     return (
-        <Flex
-            direction="column"
-            bgColor={PRIMARY}
-            height="100vh"
-            padding="16px"
-            gap="35px"
-        >
-            <Flex align="center" justify="center" height="10%">
+        <Flex direction="column" bgColor={PRIMARY} height="100vh" gap="35px">
+            <Flex align="center" justify="center" height="10%" padding="16px">
                 <Flex
                     align="center"
                     justify="center"
@@ -29,11 +23,52 @@ export const SidebarMolecules = () => {
                 </Flex>
             </Flex>
 
-            <Flex height="90%" direction="column" gap="8px" bgColor="yellow">
-                <div>1</div>
-                <div>1</div>
-                <div>1</div>
-                <div>1</div>
+            <Flex height="90%" direction="column">
+                <Flex
+                    direction="row"
+                    align="center"
+                    bgColor="#1c5cf885"
+                    width="100%"
+                    justify="space-between"
+                    padding="12px 0"
+                >
+                    <Flex align="center" gap="8px" padding="0px 0 0  16px">
+                        <Image src={IMAGES.PLUS} alt="plus" width={25} />
+                        <Typography color={WHITE} fontSize={10}>
+                            ایجاد سرنخ{" "}
+                        </Typography>
+                    </Flex>
+                </Flex>
+                <Flex
+                    direction="row"
+                    align="center"
+                    //bgColor="#1c5cf885"
+                    width="100%"
+                    justify="space-between"
+                    padding="12px 0"
+                >
+                    <Flex align="center" gap="8px" padding="0px 0 0  16px">
+                        <Image src={IMAGES.PLUS} alt="plus" width={25} />
+                        <Typography color={WHITE} fontSize={10}>
+                            مشاهده سرنخ ها{" "}
+                        </Typography>
+                    </Flex>
+                </Flex>
+                <Flex
+                    direction="row"
+                    align="center"
+                    //bgColor="#1c5cf885"
+                    width="100%"
+                    justify="space-between"
+                    padding="12px 0"
+                >
+                    <Flex align="center" gap="8px" padding="0px 0 0  16px">
+                        <Image src={IMAGES.PLUS} alt="plus" width={25} />
+                        <Typography color={WHITE} fontSize={10}>
+                            درون ریزی سرخ{" "}
+                        </Typography>
+                    </Flex>
+                </Flex>
             </Flex>
         </Flex>
     );
