@@ -8,20 +8,27 @@ export default function HomeLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
-    const { WHITE, bgColor } = useTheme();
+    const { WHITE } = useTheme();
 
     return (
         <Flex direction="row" height="100vh">
             <Flex width="15%" direction="column">
                 <Sidebar />
             </Flex>
-            <Flex width="85%" direction="column" gap="25px" bgColor={bgColor}>
+            <Flex width="85%" direction="column" gap="25px">
                 <Header />
-                <Flex direction="row" padding="0 10px">
+                <Flex direction="row" padding="0 30px">
                     <Typography>در خواست ها</Typography>
                 </Flex>
-                <Flex height="100%" padding="30px 10px" bgColor={WHITE}>
-                    {children}
+                <Flex height="100%" padding="0 30px 20px 30px" direction="column">
+                    <Flex
+                        height="100%"
+                        padding="30px 10px"
+                        direction="column"
+                        bgColor={WHITE}
+                    >
+                        {children}
+                    </Flex>
                 </Flex>
             </Flex>
         </Flex>

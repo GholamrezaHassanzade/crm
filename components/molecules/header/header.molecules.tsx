@@ -8,7 +8,7 @@ export const HeaderMolecules = () => {
             align="center"
             justify="space-between"
             padding="20px 10px"
-            height="20%"
+           // height="20%"
             bgColor={WHITE}
         >
             <Flex align="center" gap="12px">

@@ -16,7 +16,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="fa" dir="rtl">
-            <body className={IRANSans.className}>
+            <body
+                className={IRANSans.className}
+                style={{
+                    background: "#F5F5F5",
+                }}
+            >
                 <AppConfigurations>{children}</AppConfigurations>{" "}
             </body>
         </html>
