@@ -11,51 +11,9 @@ export default function LoadingPage() {
     const { PRIMARY } = useTheme();
     const handleLogin = () => {
         setLoading(true);
-        // Perform login logic here
-        // Example: loginUser()
+
     };
-    // You can add any UI inside Loading, including a Skeleton.
-    /*  return (
-        <Container maxWidth="sm">
-            <Grid
-                container
-                spacing={2}
-                alignItems="center"
-                justifyContent="center"
-            >
-                <Grid item xs={12}>
-                    <Typography variant="h4" align="center" gutterBottom>
-                        Login
-                    </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                    <LoadingSkeleton variant="text" animation="wave" />
-                </Grid>
-                <Grid item xs={12}>
-                    <LoadingSkeleton variant="text" animation="wave" />
-                </Grid>
-                <Grid item xs={12}>
-                    <Button
-                        variant="contained"
-                        color="primary"
-                        fullWidth
-                        onClick={handleLogin}
-                        disabled={loading} // Disable button when loading
-                    >
-                        {loading ? (
-                            <LoadingSkeleton
-                                variant="text"
-                                animation="wave"
-                                width={100}
-                            />
-                        ) : (
-                            "Login"
-                        )}
-                    </Button>
-                </Grid>
-            </Grid>
-        </Container>
-    ); */
+
 
     return (
         <Flex

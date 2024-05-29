@@ -1,9 +1,11 @@
 "use client";
-import { Form, Input, Typography, Button } from "@/components/atoms";
+import { Form, Input, Button } from "@/components/atoms";
 
 import { Grid, FormLabel } from "@mui/material";
 
+
 export default function ForgetPasswordPage() {
+    
     return (
         <Form width="600px">
             <Grid container spacing={3}>
